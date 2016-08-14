@@ -1,3 +1,3 @@
 class Club < ApplicationRecord
-  validates :name, presence: true, length: { in: 1..60 }
+  validates :name, presence: true, length: { in: 1..60 }, uniqueness: true
 end
